@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "ws": "^8.18.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "protobufjs": "^7.4.0"
+  }
+}
