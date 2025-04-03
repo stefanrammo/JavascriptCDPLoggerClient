@@ -23,4 +23,11 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test 
+        run: npm test
+
+      - name: Cleanup
+        if: always()
+        run: |
+          echo "Cleaning up..."
+          rm -rf node_modules
+          rm -rf .npm 
