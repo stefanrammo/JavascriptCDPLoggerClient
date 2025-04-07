@@ -2,7 +2,9 @@
 
 This guide demonstrates how to get started with the CDPLogger Client in both **Node.js** and **Browser** environments. Note that the client module must be built differently for each target environment.
 
----
+## Documentation
+
+For documentation on the JS logger see [DOCUMENTATION.md](DOCUMENTATION.md)
 
 ## Overview
 
@@ -14,8 +16,6 @@ This guide demonstrates how to get started with the CDPLogger Client in both **N
 - **Browser Version:**
   - Uses the browser’s native WebSocket.
   - Obtains protobuf definitions from the global scope via `window.root` (set by including `containerPb.js`).
-
----
 
 ## Installation
 
@@ -33,8 +33,6 @@ Include the following scripts in your HTML:
 - `protobuf.min.js` – for the ProtoBuf runtime.
 - `containerPb.js` – which sets up `window.root` with your protobuf definitions.
 - The web version of `client.js` – which should include the web-specific modifications (see the "Adapting client.js for Web Support" section below).
-
----
 
 ## Adapting client.js for Web Support
 
@@ -68,8 +66,6 @@ To enable web support, ensure your `client.js` file includes these modifications
 
 *Make sure these modifications are only applied for the browser version of your client module.*
 
----
-
 ## Usage
 
 ### Node.js Example
@@ -102,8 +98,6 @@ setTimeout(() => {
 ```
 
 *In the Node.js version, the module is imported using `require()`, and the WebSocket polyfill is provided by the `ws` package.*
-
----
 
 ### Browser Example
 
@@ -145,16 +139,12 @@ Create an HTML file that includes the necessary scripts. For example:
 
 *In the browser version, by including `client.js` (with the modifications described above), the client automatically uses the native WebSocket, the global protobuf definitions from `window.root`, and attaches the API to `window.cdplogger`.*
 
----
-
 ## Prerequisites
 
 - **CDP Studio:** Ensure a CDP Studio application is running with an active **CDPLogger** (or LogServer) on a known WebSocket port (e.g., 17000).
 - **For Node.js:** Install the `ws` package as a WebSocket polyfill.
 
----
-
 ## Learn More
 
 - [Full README](https://github.com/CDPTechnologies/JavascriptCDPLoggerClient)
-- [CDP Logger Documentation](https://cdpstudio.com/manual/cdp/cdplogger/cdplogger-iloggerndex.html)
+- [CDP Logger Documentation](https://cdpstudio.com/manual/cdp/cdplogger/cdplogger-configuration-manual.html)
