@@ -1,6 +1,3 @@
----
-
-```md
 # Quick Start Guide – CDPLogger Client
 
 This guide shows how to quickly get started using the CDPLogger Client in both **Node.js** and **Browser** environments.
@@ -73,8 +70,6 @@ client.requestLoggedNodes().then(nodes => {
 
 - [Full README](https://github.com/CDPTechnologies/JavascriptCDPLoggerClient)
 - [CDP Logger Docs](https://cdpstudio.com/manual/cdp/cdplogger/cdplogger-iloggerndex.html)
-
-```
 
 ---
 
